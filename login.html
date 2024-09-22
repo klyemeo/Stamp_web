@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page with Purple Color and Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("./images/login.png");
+            /* Background image */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 32px;
+            /* Increased border-radius for a more rounded effect */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: slide-in 0.5s ease-out forwards;
+            /* Adjusting position */
+            margin-left: 510px;
+            /* Moves the login box to the right */
+            margin-right: 20px;
+            /* Additional margin for spacing */
+        }
+        
+        @keyframes slide-in {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        input {
+            width: 85%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #EDEAE5;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #FC7448;
+            color: #EDEAE5;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #FC7448;
+        }
+        
+        .login-container a {
+            color: #FC7448;
+            display: block;
+            text-align: left;
+            margin-left: 6%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2 style="color: #FC7448;">Login</h2>
+        <form id="login-form" method="POST" action="register.php">
+            <a>USERNAME</a>
+            <input type="text" placeholder="รหัสประจำตัวนักเรียน" id="username" name="username" required>
+            <a>PASSWORD</a>
+            <input type="password" placeholder="รหัสผ่าน" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
