@@ -1,2 +1,2 @@
 # Stamp_web
-ma jraa
+pi payayam lew pi kor arn nang sre gorn
